@@ -11,10 +11,13 @@ const result = document.querySelector("h1")
 if (firstNumber > secondNumber){
     console.log(firstNumber);
     result.innerHTML = firstNumber
+    result.style.color = "green"
 } else if (secondNumber > firstNumber){
     console.log(secondNumber)
     result.innerHTML = secondNumber
+    result.style.color = "red"
 } else {
     console.log("both");
     result.innerHTML = "both"
+    result.style.color = "pink"
 }
