@@ -31,6 +31,15 @@ const advice = document.querySelector("h1")
 //     } 
 // }
 
+function generateRandomColor()
+{
+    let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+    console.log(randomColor);
+    return randomColor;
+}
+
+
+
 let index = 0
 
 let seiInvitato = false
@@ -46,8 +55,10 @@ while (index < invitati.length){
 
 if (seiInvitato === true) {
     advice.innerHTML = "Benvenuto" + " " + userName + " =)"
+    advice.style.color = generateRandomColor()
 } else {
     advice.innerHTML = "Il tuo nome non risulta sull'elenco degli invitati =("
+    advice.style.color = generateRandomColor()
 }
 
 
